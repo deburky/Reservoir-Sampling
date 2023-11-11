@@ -22,7 +22,7 @@ def main():
     sampled_num = int(sys.argv[3])
 
     with open(in_file_path, 'r') as in_file:
-        num_lines = sum(1 for line in in_file)
+        num_lines = sum(1 for _ in in_file)
 
     if num_lines <= sampled_num:
         with open(in_file_path, 'r') as in_file, open(out_file_path, 'w') as out_file:
